@@ -1,3 +1,10 @@
+/*
+Main.cpp
+Author: PotatoSauceVFX - 2017
+*/
+
+
+
 #include <SFML/Graphics.hpp>
 
 int main()
