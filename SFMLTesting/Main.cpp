@@ -2,23 +2,25 @@
 Main.cpp
 Author: PotatoSauceVFX - 2017
 */
-
-
-
 #include <SFML/Graphics.hpp>
+
+using namespace sf;
+
+const int WIDTH = 1280;
+const int HEIGHT = 720;
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
+	RenderWindow window(VideoMode(WIDTH, HEIGHT), "SFML works!");
+	CircleShape shape(100.f);
+	shape.setFillColor(Color::Green);
 
 	while (window.isOpen())
 	{
-		sf::Event event;
+		Event event;
 		while (window.pollEvent(event))
 		{
-			if (event.type == sf::Event::Closed)
+			if (event.type == Event::Closed)
 				window.close();
 		}
 
